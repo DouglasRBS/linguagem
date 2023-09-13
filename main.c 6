@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    char sexo;
+
+    printf("Digite F para feminino ou N para masculino: ");
+    scanf(" %c", &sexo);  // Usamos " %c" para evitar problemas com a quebra de linha anterior.
+
+    if (sexo == 'F' || sexo == 'f') {
+        printf("Sexo: Feminino\n");
+    } else if (sexo == 'N' || sexo == 'n') {
+        printf("Sexo: Masculino\n");
+    } else {
+        printf("Sexo inválido\n");
+    }
+
+    return 0;
+}
